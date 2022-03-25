@@ -5,11 +5,13 @@ With docker support.
 # Setup
 
 ```bash
+touch db.sqlite3
 pip3 install virtualenv
 virtualenv env
 source env/bin/activate
-docker-compose -f local.yml build
-docker-compose -f local.yml up
+alias compose='docker-compose -f local.yml'
+compose build
+compose up
 ```
 
 ## Contributing
