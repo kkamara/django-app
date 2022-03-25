@@ -1,16 +1,16 @@
 version: '3'
 
 volumes:
-  my_awesome_project_local_postgres_data: {}
-  my_awesome_project_local_postgres_data_backups: {}
+  django_app_local_postgres_data: {}
+  django_app_local_postgres_data_backups: {}
 
 services:
   django:
     build:
       context: .
       dockerfile: ./compose/local/django/Dockerfile
-    image: my_awesome_project_local_django
-    container_name: my_awesome_project_local_django
+    image: django_app_local_django
+    container_name: django_app_local_django
     platform: linux/x86_64
     depends_on:
       - postgres
@@ -27,10 +27,10 @@ services:
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
-    image: my_awesome_project_production_postgres
-    container_name: my_awesome_project_local_postgres
+    image: django_app_production_postgres
+    container_name: django_app_local_postgres
     volumes:
-      - my_awesome_project_local_postgres_data:/var/lib/postgresql/data:Z
-      - my_awesome_project_local_postgres_data_backups:/backups:z
+      - django_app_local_postgres_data:/var/lib/postgresql/data:Z
+      - django_app_local_postgres_data_backups:/backups:z
     env_file:
       - ./.envs/.local/.postgres
