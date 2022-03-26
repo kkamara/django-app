@@ -29,6 +29,10 @@ python manage.py createsuperuser \
   --last_name User
 ```
 
+## Api Documentation
+
+View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyn1ycU).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
