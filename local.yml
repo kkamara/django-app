@@ -34,3 +34,15 @@ services:
       - django_app_local_postgres_data_backups:/backups:z
     env_file:
       - ./.envs/.local/.postgres
+
+  mailhog:
+    container_name: django_app_local_mailhog
+    restart: unless-stopped
+    restart: always
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025 
+
+
+
