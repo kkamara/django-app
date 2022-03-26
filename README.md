@@ -2,7 +2,7 @@
 
 With docker support.
 
-# Setup
+## Setup
 
 ```bash
 touch db.sqlite3
@@ -14,7 +14,17 @@ compose build
 compose up
 ```
 
-# Admin credentials
+The django-app runs at `http://localhost` and `http://localhost:80`.
+
+## Mail Server
+
+![docker-mailhog.png](https://raw.githubusercontent.com/kkamara/useful/main/docker-mailhog.png)
+
+Mail environment credentials are at [.env](https://raw.githubusercontent.com/kkamara/django-app/develop/.env).
+
+The [mailhog](https://github.com/mailhog/MailHog) docker image runs at `http://localhost:8025`.
+
+## Admin
 
 Admin creds are set in [./compose/local/django/start](https://raw.githubusercontent.com/kkamara/django-app/develop/compose/local/django/start)
 
@@ -29,7 +39,7 @@ python manage.py createsuperuser \
   --last_name User
 ```
 
-## Api Documentation
+## API Docs
 
 View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyn1ycU).
 
