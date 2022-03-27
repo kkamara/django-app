@@ -29,7 +29,7 @@ if 'production' != APP_ENV:
     BASE_DIR, 
     '.envs',
     '.local',
-    '.mysql',
+    '.mariadb',
   ))
 
 # Quick-start development settings - unsuitable for production
@@ -65,6 +65,7 @@ THIRD_PARTY_APPS = [
     'phonenumber_field',
     'djoser',
     'rest_framework_simplejwt',
+    'django_extensions',
 ]
 
 LOCAL_APPS = [

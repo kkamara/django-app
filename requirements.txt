@@ -1,3 +1,4 @@
+django-extensions==3.1.5
 PyMySQL==1.0.2 # https://stdworkflow.com/1469/python-mysql-problem-nameerror-name-mysql-is-not-defined
 mysqlclient==2.1.0
 asgiref===3.5.0

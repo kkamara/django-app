@@ -40,7 +40,23 @@ python manage.py createsuperuser \
   --last_name User
 ```
 
-## API Docs
+## API
+
+```bash
+python manage.py show_urls
+
+# Output:
+...
+/api/v1/auth/users/set_password/        djoser.views.UserViewSet        user-set-password
+/api/v1/auth/users/set_password\.<format>/      djoser.views.UserViewSet        user-set-password
+/api/v1/auth/users\.<format>/   djoser.views.UserViewSet        user-list
+/api/v1/profile/agents/all/     src.profiles.views.view all_agents
+/api/v1/profile/me/     src.profiles.views.view get_profile
+/api/v1/profile/top-agents/all/ src.profiles.views.view top_agents
+/api/v1/profile/update/<str:username>/  src.profiles.views.view
+/mediafiles/<path>      django.views.static.serve
+...
+```
 
 View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyn1ycU).
 
