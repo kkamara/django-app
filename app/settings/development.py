@@ -16,7 +16,11 @@ SITE_NAME = 'Django App'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('MARIADB_DATABASE'),
+        'USER': env('MARIADB_USER'),
+        'PASSWORD': env('MARIADB_PASSWORD'),
+        'HOST': env('MARIADB_HOST'),
+        'PORT': env('MARIADB_PORT'),
     }
 }

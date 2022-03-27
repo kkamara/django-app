@@ -29,7 +29,7 @@ if 'production' != APP_ENV:
     BASE_DIR, 
     '.envs',
     '.local',
-    '.postgres',
+    '.mysql',
   ))
 
 # Quick-start development settings - unsuitable for production
