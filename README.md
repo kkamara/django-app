@@ -6,7 +6,6 @@ With docker support.
 
 ```bash
 cp .env.example .env
-touch db.sqlite3
 pip3 install virtualenv && \
   virtualenv env && \
   source env/bin/activate
