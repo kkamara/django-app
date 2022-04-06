@@ -59,6 +59,12 @@ python manage.py show_urls
 
 View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyn1ycU).
 
+## iPython Django Shell
+
+```bash
+  python3 manage.py shell -i ipython
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
