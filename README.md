@@ -57,8 +57,6 @@ python manage.py show_urls
 ...
 ```
 
-View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyn1ycU).
-
 ## iPython Django Shell
 
 ```bash
